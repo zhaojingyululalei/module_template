@@ -1,5 +1,5 @@
 #!/bin/bash
-MODULE=template
+MODULE=chrdev
 SRC=./"$MODULE".ko
 TARGET=/home/zhao/linux/nfs/rootfs/module
 

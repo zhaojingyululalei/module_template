@@ -1,6 +1,6 @@
 
 #config  不允许$(shell )
-MODULE_NAME := chrdev
+MODULE_NAME := newled
 KDIR := /home/zhao/linux/imx6ull/linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_alientek
 SRCS := main.c 
 

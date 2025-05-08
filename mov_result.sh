@@ -1,5 +1,5 @@
 #!/bin/bash
-MODULE=chrdev
+MODULE=newled
 SRC=./"$MODULE".ko
 TARGET=/home/zhao/linux/nfs/rootfs/module
 

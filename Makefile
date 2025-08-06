@@ -1,7 +1,7 @@
 
 #config  不允许$(shell )
-MODULE_NAME := newled
-KDIR := /home/zhao/linux/imx6ull/linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_alientek
+MODULE_NAME := chrdev
+KDIR := /home/tftpboot/kernel/linux-5.10.99
 SRCS := main.c 
 
 
@@ -22,14 +22,14 @@ EXTRA_CFLAGS += -DDEBUG
 
 
 all:
-		$(MAKE)  -C $(KDIR) M=$(PWD) modules
+		$(MAKE) ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- -C $(KDIR) M=$(PWD) modules
 .PHONY: test clean
 test:
 	@echo "SRCS: $(SRCS)"
 	@echo "OBJS: $(OBJS)"
 	@echo "OBJECTS: $(OBJECTS)"
 clean:
-		$(MAKE)  -C $(KDIR) M=$(PWD) modules clean
+		$(MAKE) ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- -C $(KDIR) M=$(PWD) clean
 endif
 
 

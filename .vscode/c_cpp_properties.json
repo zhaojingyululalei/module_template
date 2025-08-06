@@ -3,11 +3,10 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**",
-                "/home/zhao/linux/imx6ull/linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_alientek/include",
-                "/home/zhao/linux/imx6ull/linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_alientek/arch/arm/include",
-                "/home/zhao/linux/imx6ull/linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_alientek/arch/arm/include/generated"
-                
+                "${workspaceFolder}/include",
+                "/home/tftpboot/kernel/linux-5.10.99/include",
+                "/home/tftpboot/kernel/linux-5.10.99/arch/arm/include",
+                "/home/tftpboot/kernel/linux-5.10.99/arch/arm/include/generated"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

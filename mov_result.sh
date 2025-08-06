@@ -1,7 +1,7 @@
 #!/bin/bash
-MODULE=newled
+MODULE=chrdev
 SRC=./"$MODULE".ko
-TARGET=/home/zhao/linux/nfs/rootfs/module
+TARGET=/home/nfs/module
 
 cp -f "$SRC" "$TARGET"
 if [ $? -eq 0 ]; then
